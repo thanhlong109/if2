@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <input placeholder="enter your username" type="text" id="username">
+    <button onclick="check()">check</button>
+    <script>
+        function check(){
+            let username = document.getElementById("username").value;
+            if(username=="Admin"){
+                checkPass();
+            }else if(username==""){
+                alert("Canceld");
+            }else alert("I Dont know you");
+        }
+        function checkPass(){
+            let password = prompt("Enter your password!");
+            if(password=="TheMaster"){
+                document.write("Wellcome!")
+            }else if(password=="")
+            document.write("Canceld!");
+            else document.write("Wrong password!");
+        }
+    </script>
+</body>
+</html>
